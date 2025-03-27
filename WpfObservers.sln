@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35828.75 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfObservers", "WpfObservers\WpfObservers.csproj", "{512CE046-4BD5-43EE-87E0-3CD19D164710}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverLib", "ObserverLib\ObserverLib.csproj", "{B45F3282-962F-48E5-9B69-4319DC5CD524}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{512CE046-4BD5-43EE-87E0-3CD19D164710}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{512CE046-4BD5-43EE-87E0-3CD19D164710}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{512CE046-4BD5-43EE-87E0-3CD19D164710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B45F3282-962F-48E5-9B69-4319DC5CD524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45F3282-962F-48E5-9B69-4319DC5CD524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45F3282-962F-48E5-9B69-4319DC5CD524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45F3282-962F-48E5-9B69-4319DC5CD524}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

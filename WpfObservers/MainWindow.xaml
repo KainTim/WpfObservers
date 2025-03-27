@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfObservers"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        Width="200px"
+        Height="100px" Closed="Window_Closed">
   <StackPanel Orientation="Vertical">
     <Button Name="btnAddClock" Click="btnAddClock_Click">Neue Uhr</Button>
     <Button Name="btnStartTimer" Click="btnStartTimer_Click">Timer Starten</Button>

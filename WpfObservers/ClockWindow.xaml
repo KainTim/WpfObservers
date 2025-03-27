@@ -5,6 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfObservers"
         mc:Ignorable="d"
-        Title="ClockWindow" Height="450" Width="800">
-  <Label Name="lblClock"></Label>
+        Title="ClockWindow"
+        Closed="Window_Closed"
+        Width="200px"
+        Height="100px">
+  <StackPanel Orientation="Vertical">
+    <Label Name="lblClock" Height="30px" Width="70px"></Label>
+    <Button Name="btnExit" Click="btnExit_Click">Beenden</Button>
+  </StackPanel>
 </Window>

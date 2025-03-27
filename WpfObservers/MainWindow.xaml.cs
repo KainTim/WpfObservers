@@ -20,15 +20,28 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
     }
-
+  private ClockSubject _clock = new ClockSubject();
   private void btnAddClock_Click(object sender, RoutedEventArgs e)
   {
-    
-    new Window.Show();
+    new ClockWindow(_clock).Show();
   }
+  private bool active = true;
 
   private void btnStartTimer_Click(object sender, RoutedEventArgs e)
   {
+    btnStartTimer.IsEnabled = false;
+    new Thread(() =>
+    {
+      while(active)
+      {
+        _clock.Tick();
+        Thread.Sleep(1000);
+      }
+    }).Start();
+  }
 
+  private void Window_Closed(object sender, EventArgs e)
+  {
+    active = false;
   }
 }
