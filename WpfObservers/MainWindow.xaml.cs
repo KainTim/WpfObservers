@@ -21,9 +21,12 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
   private ClockSubject _clock = new ClockSubject();
+  List<ClockWindow> _windows = [];
   private void btnAddClock_Click(object sender, RoutedEventArgs e)
   {
-    new ClockWindow(_clock).Show();
+    var window = new ClockWindow(_clock);
+    _windows.Add(window);
+    window.Show();
   }
   private bool active = true;
 
@@ -42,6 +45,7 @@ public partial class MainWindow : Window
 
   private void Window_Closed(object sender, EventArgs e)
   {
+    _windows.ForEach(window => window.Close());
     active = false;
   }
 }
